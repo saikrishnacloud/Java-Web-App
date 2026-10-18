@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps Showcase | Cloud Operations</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">D</span><span>devops<span class="muted">showcase</span></span></a>
+    <nav><a href="#platform">Platform</a><a href="#services">Services</a><a href="#health">System health</a></nav>
+    <span class="env"><i></i> DEMO ENVIRONMENT</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> CLOUD OPERATIONS CENTER</div>
+      <h1>Ship confidently.<br><span>Scale intelligently.</span></h1>
+      <p class="intro">A sample Java web application for practicing build, deployment, and monitoring workflows with Apache Tomcat.</p>
+      <div class="hero-actions"><a class="primary" href="#health">Check application health <span>↗</span></a><a class="secondary" href="#platform">Explore platform</a></div>
+      <div class="metrics">
+        <div><strong>99.9<span>%</span></strong><small>Target availability</small></div>
+        <div><strong>4</strong><small>Cloud pillars</small></div>
+        <div><strong>24<span>/7</span></strong><small>Observability mindset</small></div>
+      </div>
+    </section>
+    <section class="section" id="platform">
+      <div class="section-heading"><div><div class="eyebrow">BUILT FOR THE JOURNEY</div><h2>Your deployment dashboard</h2></div><span class="section-note">JAVA · TOMCAT · CLOUD</span></div>
+      <div class="cards" id="services">
+        <article class="feature-card"><div class="icon purple">⌘</div><div class="card-tag">01 / DELIVERY</div><h3>Continuous delivery</h3><p>Package the application as a WAR and deploy repeatable releases to Tomcat.</p><div class="card-foot"><span>Build pipeline</span><b>↗</b></div></article>
+        <article class="feature-card"><div class="icon blue">☁</div><div class="card-tag">02 / INFRASTRUCTURE</div><h3>Cloud ready</h3><p>Run locally or host on an Ubuntu or Amazon Linux EC2 instance.</p><div class="card-foot"><span>Compute & networking</span><b>↗</b></div></article>
+        <article class="feature-card"><div class="icon green">⌁</div><div class="card-tag">03 / OBSERVABILITY</div><h3>Health endpoint</h3><p>Check a live Java servlet endpoint and inspect the response from your browser.</p><div class="card-foot"><span>HTTP / JSON</span><b>↗</b></div></article>
+      </div>
+    </section>
+    <section class="health-panel" id="health">
+      <div class="health-copy"><div class="eyebrow">LIVE CHECK</div><h2>Application health</h2><p>Calls the Java servlet at <code>/api/health</code> and displays the current runtime response.</p><button id="checkBtn" class="primary">Run health check <span>→</span></button></div>
+      <div class="terminal"><div class="terminal-top"><div class="lights"><i></i><i></i><i></i></div><span>health-check.json</span><span class="terminal-live">● LIVE</span></div><pre id="healthOutput"><span class="comment">// Click “Run health check” to query the Java backend</span>
+{
+  <span class="key">"status"</span>: <span class="string">"waiting"</span>,
+  <span class="key">"endpoint"</span>: <span class="string">"/api/health"</span>
+}</pre><div id="healthStatus" class="status-line"><span class="status-dot"></span> Waiting for request</div></div>
+    </section>
+    <section class="steps">
+      <div><div class="eyebrow">NEXT STEPS</div><h2>From laptop to cloud</h2></div>
+      <div class="step-list"><div class="step"><span>01</span><div><b>Build</b><p>Run <code>mvn clean package</code> to create the WAR.</p></div></div><div class="step"><span>02</span><div><b>Deploy</b><p>Copy the WAR into Tomcat's <code>webapps</code> directory.</p></div></div><div class="step"><span>03</span><div><b>Verify</b><p>Open the site and run the live health check.</p></div></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">D</span><span>devops<span class="muted">showcase</span></span></a><span>Practice project · Built for learning</span><span>Java 17+ · Tomcat 10.1+</span></footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
